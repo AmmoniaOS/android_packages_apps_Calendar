@@ -19,8 +19,8 @@ package com.android.calendar;
 import com.android.calendar.CalendarController.ViewType;
 
 import android.content.Context;
-import android.mokee.lunar.Lunar;
-import android.mokee.utils.MoKeeUtils;
+import com.android.internal.util.one.Lunar;
+import com.android.internal.util.one.OneUtils;
 import android.os.Handler;
 import android.text.format.DateUtils;
 import android.text.format.Time;
@@ -189,7 +189,7 @@ public class CalendarViewAdapter extends BaseAdapter {
             TextView weekDay = (TextView) v.findViewById(R.id.top_button_weekday);
             TextView date = (TextView) v.findViewById(R.id.top_button_date);
 
-            if (MoKeeUtils.isSupportLanguage(false)) {
+            if (OneUtils.isSupportLanguage(false)) {
                 switch (mCurrentMainView) {
                 case ViewType.DAY:
                     weekDay.setVisibility(View.VISIBLE);

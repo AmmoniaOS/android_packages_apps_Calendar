@@ -35,11 +35,11 @@ import android.graphics.Paint.FontMetrics;
 import android.graphics.Paint.Style;
 import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
-import android.mokee.lunar.Lunar;
-import android.mokee.lunar.LunarFestival;
-import android.mokee.lunar.SolarHoliDay;
-import android.mokee.lunar.SolarTerm;
-import android.mokee.utils.MoKeeUtils;
+import com.android.internal.util.one.Lunar;
+import com.android.internal.util.one.LunarFestival;
+import com.android.internal.util.one.SolarHoliDay;
+import com.android.internal.util.one.SolarTerm;
+import com.android.internal.util.one.OneUtils;
 import android.provider.CalendarContract.Attendees;
 import android.text.TextPaint;
 import android.text.TextUtils;
@@ -731,7 +731,7 @@ public class MonthWeekEventsView extends SimpleWeekView {
             x = computeDayLeftPosition(i - offset) - (SIDE_PADDING_MONTH_NUMBER);
             canvas.drawText(mDayNumbers[i], x, y, mMonthNumPaint);
 
-            if (MoKeeUtils.isSupportLanguage(false)) {
+            if (OneUtils.isSupportLanguage(false)) {
                 Calendar calendar = Calendar.getInstance();
                 int year = Integer.parseInt(mYearNumbers[i]);
                 int month = Integer.parseInt(mMonthNumbers[i]);
