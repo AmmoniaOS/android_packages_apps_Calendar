@@ -94,10 +94,10 @@ public class CreateEventDialogFragment extends DialogFragment implements TextWat
 
         @Override
         public void onQueryComplete(int token, Object cookie, Cursor cursor) {
-            setDefaultCalendarView(cursor);
-            if (cursor != null) {
+            // setDefaultCalendarView(cursor);
+            // if (cursor != null) {
                 cursor.close();
-            }
+            // }
         }
     }
 

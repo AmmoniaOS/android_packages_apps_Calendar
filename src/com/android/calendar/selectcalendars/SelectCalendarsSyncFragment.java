@@ -113,7 +113,7 @@ public class SelectCalendarsSyncFragment extends ListFragment
         super.onActivityCreated(savedInstanceState);
         // Give some text to display if there is no data. In a real
         // application this would come from a resource.
-        setEmptyText(getActivity().getText(R.string.no_syncable_calendars));
+        // setEmptyText(getActivity().getText(R.string.no_syncable_calendars));
         // Prepare the loader. Either re-connect with an existing one,
         // or start a new one.
         getLoaderManager().initLoader(0, null, this);

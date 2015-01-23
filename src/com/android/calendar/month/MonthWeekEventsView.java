@@ -406,7 +406,7 @@ public class MonthWeekEventsView extends SimpleWeekView {
         // TODO modify paint properties depending on isMini
 
         DisplayMetrics dm = this.getResources().getDisplayMetrics();
-        int LUNAR_NUMBER_SIZE = (int) (TEXT_SIZE_LUNAR_NUMBER* dm.density);
+        int LUNAR_NUMBER_SIZE = (int) (TEXT_SIZE_LUNAR_NUMBER * dm.density);
 
         mMonthNumPaint = new Paint();
         mMonthNumPaint.setFakeBoldText(false);
