@@ -236,7 +236,7 @@ public class CreateEventDialogFragment extends DialogFragment implements TextWat
 
     // Find the calendar position in the cursor that matches calendar in
     // preference
-    private void setDefaultCalendarView(Cursor cursor) {
+    /*private void setDefaultCalendarView(Cursor cursor) {
         if (cursor == null || cursor.getCount() == 0) {
             // Create an error message for the user that, when clicked,
             // will exit this activity without saving the event.
@@ -299,7 +299,7 @@ public class CreateEventDialogFragment extends DialogFragment implements TextWat
         }
         cursor.moveToFirst();
         setCalendarFields(cursor);
-    }
+    }*/
 
     private void setCalendarFields(Cursor cursor) {
         int calendarIdIndex = cursor.getColumnIndexOrThrow(Calendars._ID);

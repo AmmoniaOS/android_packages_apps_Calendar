@@ -742,7 +742,7 @@ public class MonthWeekEventsView extends SimpleWeekView {
                 String fullchinadatestr = lunar.toString();            			
                 String LunarFestivalStr = LunarFestival.getLunarFestival(fullchinadatestr, lunar);
                 Paint mLunarFestivalPant = new Paint(mLunarPaint);
-                mLunarFestivalPant.setColor(Color.RED);
+                mLunarFestivalPant.setColor(OneUtils.getCurrentHourColor());
                 if (SolarTermStr.length() == 0) {
                     String SolarHoliDayStr=SolarHoliDay.getSolarHoliDay(month, day);
                     if (SolarHoliDayStr.length() == 0) {
@@ -754,7 +754,7 @@ public class MonthWeekEventsView extends SimpleWeekView {
                         }
                     } else {
                         Paint mSolarPant = new Paint(mLunarPaint);
-                        mSolarPant.setColor(Color.RED);
+                        mSolarPant.setColor(OneUtils.getCurrentHourColor());
                         canvas.drawText(SolarHoliDayStr, x, y + lunarTextHeight - 5, mSolarPant);
                     }
                 } else {
